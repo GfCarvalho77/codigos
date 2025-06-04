@@ -1,0 +1,15 @@
+entrada=(input(f"Digite 03 números: " ))
+tupla_numeros = tuple(int(x) for x in entrada.split())
+array=[float(num) for num in entrada.split()]
+print(f'Array é {array}')
+
+print(f"Você escolheu {entrada}")
+maior=max(tupla_numeros)
+menor=min(tupla_numeros)
+soma=sum(tupla_numeros)
+media=sum(tupla_numeros) / (len(tupla_numeros))
+print(maior)
+print(f'O maior número é {maior}')
+print(f'O menor número é {menor}')
+print(f'A soma dos números é {soma}')
+print(f'A media dos números é {media}')

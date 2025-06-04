@@ -1,0 +1,1 @@
+print(frutas[6])
