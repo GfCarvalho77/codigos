@@ -1,0 +1,2 @@
+with open('arquivo.txt', encoding='utf-8') as f:
+    texto = f.read()

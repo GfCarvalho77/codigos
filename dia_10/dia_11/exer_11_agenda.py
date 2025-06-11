@@ -19,18 +19,15 @@ while True:
             #Deseja editar nome ou dados?
 
             #estando na lista, rolar os dados e perguntar o que editar.
-            edição=input(print("Deseja editar nome [N] dados [D]:  ")).lower()
+            edição=input("Deseja editar nome [N] dados [D]:  ").lower()
 
             if edição == 'n':
-                nome_correto=input(print("Informe nome correto: "))
+                nome_correto=input("Informe nome correto: ")
 
                 agenda[nome_correto] = agenda[nome_dados_a_editar]
-            
-            del agenda[nome_dados_a_editar]
+                del agenda[nome_dados_a_editar]
+                print("Nome atualizado com sucesso.")
 
-            print("Nome atualizado com sucesso.")
-
-            for valor, chave in agenda
 
             if edição == 'd':
                 for chave, valor in agenda[nome_dados_a_editar].items():
@@ -78,6 +75,15 @@ while True:
                 "Idade": idade,
                 "Endereço": endereço
                 }
-    
+            
+    if ação_inicial == 'd':
+        dados_a_deletar=input("Informe nome a remover:")
+        if dados_a_deletar in agenda:
+            del agenda[dados_a_deletar]
+            print ("nome removido com sucesso!")
 
+            for nome, dados in agenda.items():
+                print({nome.title()})
 
+                for chave, valor in dados.items():
+                    print(f"{chave}:{valor}")

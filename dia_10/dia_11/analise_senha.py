@@ -1,0 +1,1 @@
+#(c.islower() / c.isdigit() / c.isalnum)
